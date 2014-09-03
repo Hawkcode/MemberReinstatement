@@ -2914,6 +2914,16 @@ End
 		    
 		    Return False
 		  end
+		  
+		  lsSql = "Select Email from tblpeople where PersonID = " + Str(lnPid)
+		  
+		  rs = Session.sesAspeDB.SQLSelect(LsSql)
+		  
+		  
+		  if Session.sesAspeDB.CheckDBError then return False
+		  
+		  frmAppllcation.msUserEmail = rs.Field("Email").StringValue
+		  
 		  Return True
 		  
 		  'MsgBox("Pid:" + Str(lnPid) + "<<")

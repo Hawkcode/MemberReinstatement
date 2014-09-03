@@ -1,5 +1,5 @@
 Type=Web
-RBProjectVersion=2014.02
+RBProjectVersion=2014.021
 MinIDEVersion=20110400
 Class=MemberReinstatement;MemberReinstatement.xojo_code;&h7708405;&h0;false
 WebSession=Session;Session.xojo_code;&h756F629E;&h0;false
@@ -40,8 +40,8 @@ WebView=dlgCorrectPerson;dlgCorrectPerson.xojo_code;&h703D7137;&h0;false
 DefaultWindow=frmAppllcation
 MajorVersion=1
 MinorVersion=1
-SubVersion=0
-NonRelease=27
+SubVersion=1
+NonRelease=30
 Release=0
 InfoVersion=
 LongVersion=

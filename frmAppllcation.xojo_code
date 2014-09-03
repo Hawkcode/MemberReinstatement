@@ -500,7 +500,14 @@ Begin WebPage frmAppllcation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
 End
 #tag EndWebPage
@@ -766,6 +773,8 @@ End
 		  System.DebugLog("Last Error: " + Str(SMTPServer.LastErrorCode) )
 		  
 		  Msg.AddRecipient csEmailAddress
+		  Msg.AddCCRecipient msUserEmail
+		  
 		  System.DebugLog("Sending email to: " + csEmailAddress)
 		  Msg.subject = "Reinstatement Form - " + rs.Field("lastName").StringValue + ", " + rs.Field("firstName").StringValue + " " + rs.Field("middleName").StringValue
 		  Msg.BodyHTML = CreateMsg()
@@ -998,6 +1007,10 @@ End
 			'MemInfo
 		#tag EndNote
 		msCurrentScreen As String = "MemInfo"
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msUserEmail As String
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
