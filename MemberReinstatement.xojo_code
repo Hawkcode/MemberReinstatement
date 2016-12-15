@@ -2,6 +2,12 @@
 Protected Class MemberReinstatement
 Inherits WebApplication
 	#tag Event
+		Sub Open(args() as String)
+		  self.Security.FrameEmbedding = WebAppSecurityOptions.FrameOptions.Allow
+		End Sub
+	#tag EndEvent
+
+	#tag Event
 		Function UnhandledException(Error As RuntimeException) As Boolean
 		  Return False
 		End Function

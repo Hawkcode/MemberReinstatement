@@ -2678,6 +2678,7 @@ Begin WebContainer conMemInfo
       _VerticalPercent=   0.0
    End
    Begin WebButton btnEdit
+      AutoDisable     =   False
       Caption         =   "Edit"
       Cursor          =   0
       Enabled         =   True
@@ -2711,6 +2712,7 @@ Begin WebContainer conMemInfo
       _VerticalPercent=   0.0
    End
    Begin WebButton btnSave
+      AutoDisable     =   False
       Caption         =   "Save"
       Cursor          =   0
       Enabled         =   False
@@ -2821,6 +2823,7 @@ Begin WebContainer conMemInfo
       _VerticalPercent=   0.0
    End
    Begin WebButton btnSearchMemberNumber
+      AutoDisable     =   False
       Caption         =   "Search Membership Number"
       Cursor          =   0
       Enabled         =   True
